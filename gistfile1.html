@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Hunt Mystery for Taaru</title>
+    <style>
+        body {
+            background-color: #fff0f5;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .flower {
+            display: inline-block;
+            margin: 20px;
+            cursor: pointer;
+        }
+        .message {
+            display: none;
+            font-size: 18px;
+            color: #d63384;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌸 The Flower Hunt Mystery 🌸</h1>
+        <p>Click the flowers to uncover their hidden messages!</p>
+        
+        <div class="flower" onclick="revealMessage(1)">
+            🌷
+        </div>
+        <div class="flower" onclick="revealMessage(2)">
+            🌹
+        </div>
+        <div class="flower" onclick="revealMessage(3)">
+            🌻
+        </div>
+        
+        <div id="message1" class="message">“Love is like a tulip—bright and full of promise.”</div>
+        <div id="message2" class="message">“A rose whispers secrets only the heart can hear.”</div>
+        <div id="message3" class="message">“Sunflowers turn to light, just like I turn to you, Taaru.”</div>
+    </div>
+
+    <script>
+        function revealMessage(num) {
+            document.getElementById('message' + num).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
